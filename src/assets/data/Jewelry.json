@@ -1,0 +1,58 @@
+[
+    {
+        "id": 0,
+        "name": "Panthere De Cartier Ring",
+        "images": [
+            "assets/Images/Jewelry/Panthere Ring/1.PNG",
+            "assets/Images/Jewelry/Panthere Ring/2.PNG",
+            "assets/Images/Jewelry/Panthere Ring/3.PNG",
+            "assets/Images/Jewelry/Panthere Ring/4.PNG"
+        ],
+        "preis": 23500,
+        "beschreibung": "Panthère de Cartier ring, yellow gold 750/1000, tsavorite garnets, onyx (for size 52). Width of the pattern according to metrics: 25.64 to 31.81 mm.",
+        "bewertung": 4,
+        "kategorie":"Jewelry"
+    },
+    {
+        "id": 1,
+        "name": "Panthere De Cartier Neklace",
+        "images": [
+            "assets/Images/Jewelry/Panthere Neklace/1.PNG",
+            "assets/Images/Jewelry/Panthere Neklace/2.PNG",
+            "assets/Images/Jewelry/Panthere Neklace/3.PNG",
+            "assets/Images/Jewelry/Panthere Neklace/4.PNG"
+        ],
+        "preis": 35000,
+        "beschreibung": "Necklace, yellow gold 750/1000, black lacquer, set with 2 tsavorite garnets, onyx and 3 brilliant-cut diamonds totalling 0.16 carats. Length: 33.2cm. Width of the motif: 21.9 mm. Thickness of the motif: 16.2 mm. Length of the motif: 27.3 mm.",
+        "bewertung": 5,
+        "kategorie":"Jewelry"
+    },
+    {
+        "id": 2,
+        "name": "Panthere De Cartier Earring",
+        "images": [
+            "assets/Images/Jewelry/Panthere Earring/1.PNG",
+            "assets/Images/Jewelry/Panthere Earring/2.PNG",
+            "assets/Images/Jewelry/Panthere Earring/3.PNG",
+            "assets/Images/Jewelry/Panthere Earring/4.PNG"
+        ],
+        "preis": 24900,
+        "beschreibung": "Panthère de Cartier pendant earrings, yellow gold 750/1000, each set with 34 brilliant-cut diamonds totalling 0.1 carats, tsavorite garnet eyes, onyx. Length: 47.43 mm Width of the pattern: 10.37 mm. Length of the pattern: 11 mm. Thickness of the pattern: 10.86 mm.",
+        "bewertung": 3,
+        "kategorie":"Jewelry"
+    },
+    {
+        "id": 3,
+        "name": "Panthere De Cartier Bracelet",
+        "images": [
+            "assets/Images/Jewelry/Panthere Bracelet/1.PNG",
+            "assets/Images/Jewelry/Panthere Bracelet/2.PNG",
+            "assets/Images/Jewelry/Panthere Bracelet/3.PNG",
+            "assets/Images/Jewelry/Panthere Bracelet/4.PNG"
+        ],
+        "preis": 23000,
+        "beschreibung": "Panthère de Cartier bracelet, yellow gold 750/1000, set with 38 brilliant-cut diamonds totalling 0.26 carats, black lacquer, tsavorite garnets, onyx. Width of the pattern: 12 mm. Length of the pattern: 9.6 mm (for size 17).",
+        "bewertung": 5,
+        "kategorie":"Jewelry"
+    }
+]

@@ -1,0 +1,14 @@
+[    {
+    "id": 4,
+    "name": "Ferrari LaFerrari ",
+    "images": [
+        "assets/Images/Cars/Ferrari/1.PNG",
+        "assets/Images/Cars/Ferrari/2.PNG",
+        "assets/Images/Cars/Ferrari/3.PNG",
+        "assets/Images/Cars/Ferrari/4.PNG"
+    ],
+    "preis": 3000000,
+    "beschreibung": "The LaFerrari Aperta is an open-top version of Ferrari's flagship hybrid supercar. It's powered by a V12 engine and an electric motor, and can deliver up to 950 horsepower.", 
+    "bewertung": 2,
+    "kategorie":"Cars"
+}]

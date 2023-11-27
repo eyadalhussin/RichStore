@@ -1,0 +1,35 @@
+<div class="mainContainer" (click)="navigateToArtikel(artikel.id)">
+    <!-- (click)="navigate(artikel)" -->
+    <div class="top">
+        <!-- ImageContainer -->
+        <div class="imageContainer">
+            <img src={{artikel.images[0]}} alt="" class="Artikelimg">
+        </div>
+        <!-- /ImageContainer -->
+
+
+        <!-- Container for Info and Buy -->
+        <!-- <div class="InfoBuy"> -->
+            <!-- InfoContainer -->
+            <div class="InfoContainer">
+                <span class="ArtikelName">{{artikel.name}}</span>
+                <app-stars [artikel]="artikel" [size]="'small'"></app-stars>
+                <span class="ArtikelPreis">{{formatPreis(artikel.preis)}}€</span>
+            </div>
+            <!-- /InfoContainer -->
+
+            <!-- Buy container -->
+            <!-- <div class="BuyContainer">
+                <button class="BuyButton">
+                    Add to Cart <span style="font-weight: 800;">+</span>
+                </button>
+                <div class="menge">
+                    <select class="mengenSelect">
+                        <option value="{{element}}" *ngFor="let element of numbers">{{element}}</option>
+                    </select>
+                </div>
+            </div> -->
+            <!-- /Buy container -->
+        <!-- </div> -->
+    </div>
+</div>

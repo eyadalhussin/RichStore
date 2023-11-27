@@ -1,0 +1,85 @@
+<div class="mainContainer" *ngIf="sideBarActive">
+    <div class="leftContainer">
+        <div class="closeContainer" (click)="closeSideBar()">
+            <button class="closeButton">x</button>
+        </div>
+        <!-- Logo -->
+        <div class="logo">
+            <span class="logoFont primary">Rich</span>
+            <span class="logoFont secondary">Store</span>
+        </div>
+
+        <!-- Hello Container -->
+        <div class="helloContainer">
+            <h2 *ngIf="!isLoading">Hallo {{currentUser.vorname}} !</h2>
+        </div>
+
+        <!-- Navs Container -->
+        <div class="navsContainer">
+
+            <!-- Nav Home -->
+            <div class="navi" (click)="onNavigate('Home')">
+                <img src="assets/Icons/Home.png" alt="" class="naviIcon">
+                <div class="navTextContainer">
+                    <span class="navText">Home</span>
+                </div>
+            </div>
+
+            <!-- Nav Account -->
+            <div class="navi" (click)="onNavigate('Account')">
+                <img src="assets/Icons/User.png" alt="" class="naviIcon">
+                <div class="navTextContainer">
+                    <span class="navText">Your Account</span>
+                </div>
+            </div>
+            <!-- Nav Orders -->
+            <div class="navi" (click)="onNavigate('Orders')">
+                <img src="assets/Icons/Orders.png" alt="" class="naviIcon">
+                <div class="navTextContainer">
+                    <span class="navText">Your Orders</span>
+                </div>
+            </div>
+            <!-- Nav Cart -->
+            <div class="navi" (click)="onNavigate('Cart')">
+                <img src="assets/Icons/Warenkorb.png" alt="" class="naviIcon">
+                <div class="navTextContainer">
+                    <span class="navText">Your Cart</span>
+                </div>
+            </div>
+            <!-- Nav Checkout -->
+            <div class="navi" (click)="onNavigate('Checkout')">
+                <img src="assets/Icons/Checkout.png" alt="" class="naviIcon">
+                <div class="navTextContainer">
+                    <span class="navText">Checkout</span>
+                </div>
+            </div>
+            <!-- Nav Support -->
+            <div class="navi">
+                <img src="assets/Icons/Support.png" alt="" class="naviIcon">
+                <div class="navTextContainer">
+                    <span class="navText">Support</span>
+                </div>
+            </div>
+
+            <!-- Nav Info -->
+            <div class="navi">
+                <img src="assets/Icons/Info.png" alt="" class="naviIcon">
+                <div class="navTextContainer">
+                    <span class="navText">Info</span>
+                </div>
+            </div>
+
+            <!-- Nav Logout -->
+            <div class="navi">
+                <img src="assets/Icons/Logout.png" alt="" class="naviIcon">
+                <div class="navTextContainer">
+                    <span class="navText">Logout</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="rightContainer" (click)="closeSideBar()">
+
+    </div> -->
+</div>

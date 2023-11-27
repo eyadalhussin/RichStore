@@ -1,0 +1,273 @@
+:host(app-checkout){
+    width: 100%;
+    max-width: 100%;
+}
+
+.main{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 0em 0 2em 0;
+}
+
+.payContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 1em;
+}
+
+.buyButton{
+    all: unset;
+    color: white;
+    background: var(--buttonGradient);
+    width: 75%;
+    height: 2em;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.infoContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.orderInfoContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.orderInfo{
+    box-sizing: border-box;
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.3em;
+    border: 1px solid var(--grey);
+    padding: 0.3em;
+}
+
+.orderBreaker{
+    height: 1px;
+    width: 100%;
+    background-color: var(--grey);
+}
+
+.lineBreaker{
+    height: 1px;
+    width: 80%;
+    background-color: var(--grey);
+}
+
+.orderInfoText{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderText{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.orderTextLarge{
+    font-size: 0.9em;
+    color: var(--secondary);
+}
+
+
+
+.adressContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.address{
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.addressInfo{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.paymentContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.payment{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.paymentInfoLarge{
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+}
+
+.paymentInfo{
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+}
+
+.giftContainer{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.giftInput{
+    max-width: 60%;
+}
+
+.applyButton{
+    all: unset;
+    width: 30%;
+    background: var(--buttonGradient);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.useCondition{
+    display: block;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.changeButton{
+    all: unset;
+    width: 10%;
+    color: var(--secondary);
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.changeButton:hover{
+    text-decoration: underline;
+}
+
+.light{
+    font-weight: 300;
+}
+
+.usageContainer{
+    border: 1px solid var(--grey);
+    padding: 0.3em;
+}
+
+.darkBlue{
+    color: var(--secondary);
+}
+
+.link:hover{
+    color: var(--darkBlue);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.purchaseContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 5em;
+}
+
+.errorContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc3c3;
+    border: 2px solid #ff857c;
+    gap: 0.5em;
+}
+
+.successContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9FFD9;
+    border: 2px solid #12A623;
+    gap: 0.5em;
+}
+
+.purchaseIcon{
+    min-width: 20px;
+    min-height: 20px;
+
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.purchaseText{
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.filterError{
+    filter: invert(11%) sepia(96%) saturate(5980%) hue-rotate(1deg) brightness(109%) contrast(106%);
+}
+
+.filterSuccess{
+    filter: invert(44%) sepia(95%) saturate(684%) hue-rotate(84deg) brightness(93%) contrast(89%);
+}
+
+@media (min-width: 768px) {
+        .mainContainer{
+            width: 60%;
+        }
+}

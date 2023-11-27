@@ -1,0 +1,27 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sizeSmall{
+    max-width: 10px;
+    max-width: 10px;
+}
+
+.sizeBig{
+    max-width: 20px;
+    max-width: 20px;
+}
+
+.filled{
+    filter: invert(74%) sepia(13%) saturate(7195%) hue-rotate(359deg) brightness(103%) contrast(105%);
+}
+
+.empty{
+    filter: var(--filterGrey);
+}
+
+.border{
+    border: 1px solid black;
+}

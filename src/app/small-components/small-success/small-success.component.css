@@ -1,0 +1,25 @@
+.successContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9FFD9;
+    border: 2px solid #12A623;
+    gap: 0.5em;
+    padding: 0.2em;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.purchaseIcon{
+    min-width: 20px;
+    min-height: 20px;
+
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.filterSuccess{
+    filter: invert(44%) sepia(95%) saturate(684%) hue-rotate(84deg) brightness(93%) contrast(89%);
+}

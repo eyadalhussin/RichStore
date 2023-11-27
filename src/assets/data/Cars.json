@@ -1,0 +1,72 @@
+[
+    {
+        "id": 0,
+        "name": "Bugatti Chiron",
+        "images": [
+            "assets/Images/Cars/Bugatti Chiron/1.PNG",
+            "assets/Images/Cars/Bugatti Chiron/2.PNG",
+            "assets/Images/Cars/Bugatti Chiron/3.PNG",
+            "assets/Images/Cars/Bugatti Chiron/4.PNG"
+        ],
+        "preis": 2400000,
+        "beschreibung": "The Chiron is a supercar that's synonymous with speed, luxury and exclusivity. It's powered by an 8.0-liter W16 engine that can deliver up to 1,500 horsepower.",
+        "bewertung": 5,
+        "kategorie":"Cars"
+    },
+    {
+        "id": 1,
+        "name": "Lamborghini Aventador SVJ ",
+        "images": [
+            "assets/Images/Cars/Lamborghini Aventador SVJ/1.PNG",
+            "assets/Images/Cars/Lamborghini Aventador SVJ/2.PNG",
+            "assets/Images/Cars/Lamborghini Aventador SVJ/3.PNG",
+            "assets/Images/Cars/Lamborghini Aventador SVJ/4.PNG"
+        ],
+        "preis": 500000,
+        "beschreibung": "The Aventador SVJ is a track-focused version of Lamborghini's flagship supercar. It's powered by a naturally aspirated V12 engine that can deliver up to 759 horsepower.",
+        "bewertung": 3,
+        "kategorie":"Cars"
+    },
+    {
+        "id": 2,
+        "name": "Rolls Royce ",
+        "images": [
+            "assets/Images/Cars/Rolls Royce/1.PNG",
+            "assets/Images/Cars/Rolls Royce/2.PNG",
+            "assets/Images/Cars/Rolls Royce/3.PNG",
+            "assets/Images/Cars/Rolls Royce/4.PNG"
+        ],
+        "preis": 11000000,
+        "beschreibung": "The Sweptail is a one-of-a-kind bespoke creation that was commissioned by a private customer. It features an elegant and unique design, and is powered by a 6.75-liter V12 engine.", 
+        "bewertung": 4,
+        "kategorie":"Cars"
+    },
+    {
+        "id": 3,
+        "name": "Koenigsegg Jesko ",
+        "images": [
+            "assets/Images/Cars/Koenigsegg Jesko/1.PNG",
+            "assets/Images/Cars/Koenigsegg Jesko/2.PNG",
+            "assets/Images/Cars/Koenigsegg Jesko/3.PNG",
+            "assets/Images/Cars/Koenigsegg Jesko/4.PNG"
+        ],
+        "preis": 3000000,
+        "beschreibung": "The Jesko is a hypercar that's built for speed and performance. It's powered by a 5.0-liter V8 engine that can deliver up to 1,600 horsepower.", 
+        "bewertung": 3,
+        "kategorie":"Cars"
+    },
+    {
+        "id": 4,
+        "name": "Ferrari LaFerrari ",
+        "images": [
+            "assets/Images/Cars/Ferrari/1.PNG",
+            "assets/Images/Cars/Ferrari/2.PNG",
+            "assets/Images/Cars/Ferrari/3.PNG",
+            "assets/Images/Cars/Ferrari/4.PNG"
+        ],
+        "preis": 3000000,
+        "beschreibung": "The LaFerrari Aperta is an open-top version of Ferrari's flagship hybrid supercar. It's powered by a V12 engine and an electric motor, and can deliver up to 950 horsepower.", 
+        "bewertung": 2,
+        "kategorie":"Cars"
+    }
+]

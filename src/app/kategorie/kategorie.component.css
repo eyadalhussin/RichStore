@@ -1,0 +1,36 @@
+.main{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 2em 0 2em 0;
+}
+
+.imgContainer{
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.imgContainer img{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.tag{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .mainContainer{
+        width: 60%;
+    }
+}

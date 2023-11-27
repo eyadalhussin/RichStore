@@ -1,0 +1,12 @@
+<div class="mainContainer">
+    <span class="font">{{categorieName}}</span>
+    <div class="artikels">
+        <div class="ArtikelCont" *ngFor="let artikel of artikels | slice:0:4">
+            <img src="{{artikel.images[0]}}" alt="" class="artikelImg" (click)="navigateToArtikel(artikel)">
+            <span class="fontSmall">{{artikel.name}}</span>
+            <span class="fontSmaller">{{formatPreis(artikel.preis)}}€</span>
+        </div>
+    </div>
+    <a class="more" (click)="navigateToCategorie(categorieName)">See All</a>
+
+</div>

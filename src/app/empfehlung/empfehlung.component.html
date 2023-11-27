@@ -1,0 +1,11 @@
+<div class="mainContainer">
+    <br>
+    <div class="breaker">
+        <span></span>
+    </div>
+    <h3>You might also like:</h3>
+    <p *ngIf="isLoading">is Loading ....</p>
+        <div class="artikelContainer" *ngFor="let artikel of artikels">
+            <app-artikel [artikel]="artikel" *ngIf="!isLoading"></app-artikel>
+    </div>
+</div>

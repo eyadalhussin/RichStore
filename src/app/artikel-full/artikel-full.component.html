@@ -1,0 +1,36 @@
+<app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
+<div class="main" *ngIf="!isLoading">
+    <div class="backContainer">
+        <button class="backButton" (click)="back()">Back</button>
+    </div>
+    <div class="topContainer">
+        <!-- Artikel Info -->
+        <div class="InfoArtikel">
+            <span class="artikelName">{{artikel.name}}</span>
+            <app-stars [artikel]="artikel" [border]="true" [size]="'big'"></app-stars>
+            <span class="artikelDescription">{{artikel.beschreibung}}</span>
+        </div>
+        <!-- ArtikelImage -->
+        <div class="ImageArtikel">
+            <img src="assets/Icons/Left.png" alt="" class="arrowLeft" (click)="swipeLeft()" [ngClass]="{filterGrey:leftEnd, filterBlue:!leftEnd}">
+            <img src="{{selectedImage}}" alt="" class="ImageBig">
+            <img src="assets/Icons/Right.png" alt="" class="arrowRight" (click)="swipeRight()" [ngClass]="{filterGrey:rightEnd, filterBlue:!rightEnd}">
+        </div>
+
+        <span class="artikelPreis">{{formatPreis(artikel.preis)}}€</span>
+
+        <!-- Buy Container -->
+        <div class="BuyContainer">
+            <button class="BuyButton" (click)="addArtikel(artikel)">
+                Add to Cart <span style="font-weight: 700; ">+</span>
+            </button>
+            <app-small-success text="Item Added to Cart !" *ngIf="itemAdded"></app-small-success>
+            <!-- <div class="menge">
+                <select class="mengenSelect" [(ngModel)]="selectedOption" (change)="updateMenge()">
+                    <option value={{element}} *ngFor="let element of numbers">{{element}}</option>
+                </select>
+            </div> -->
+        </div>
+    </div>
+    <app-empfehlung selectedID = {{+artikel.id}} #childRef categorie={{artikel.kategorie}}></app-empfehlung>
+</div>

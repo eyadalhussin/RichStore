@@ -1,0 +1,41 @@
+<div class="navContainer">
+
+    <!-- Hamburger Menü -->
+    <div class="hamCont" (click)="openSideBar()">
+        <img src="assets/Icons/hamIcon.png" alt="" class="hamIcon blue">
+    </div>
+
+    <!-- User container -->
+    <div class="large userCont" (click)="openSideBar()">
+        <img src="assets/Icons/UserOne.png" alt="" class="userArrow">
+        <span class="fontNormal primary large" *ngIf="!isLoading">{{currentUser.vorname}}</span>
+    </div>
+
+    <!-- Logo -->
+    <div class="logoContainer" (click)="onClickNavigateHome()">
+        <span class="logoFont primary">Rich</span>
+        <span class="logoFont secondary">Store</span>
+    </div>
+
+
+    <!-- Search Container -->
+    <div class="searchCont large">
+        <input type="text" class="searchFeld large">
+        <div class="searchIconCont">
+            <img src="assets/Icons/Search.png" alt="" class="searchIcon blue">
+        </div>
+    </div>
+
+    <!-- Saldo Container -->
+    <div class="flexi large">
+        <!-- <img src="assets/Icons/Euro3.png" alt="" class="icon"> -->
+        <span class="euroFont primary" *ngIf="!isLoading">{{formatPreis(currentUser.saldo)}}€</span>
+    </div>
+
+    <!-- Cart Container -->
+    <div class="flexi cartContainer" (click)="onNavigate('Cart')">
+        <img src="assets/Icons/Warenkorb.png" alt="" class="icon blue">
+        <span class="itemCount">{{anzahlWarenkorb}}</span>
+    </div>
+
+</div>

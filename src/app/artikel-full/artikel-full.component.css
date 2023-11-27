@@ -1,0 +1,217 @@
+:host(app-artikel-full) {
+    width: 100%;
+    max-width: 100%;
+}
+
+.main {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e4edf4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #dae1e7); 
+    background: linear-gradient(to right, #eef2f3, #dae1e7); 
+}
+
+.topContainer {
+    width: 85%;
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--grey);
+    padding: 0 1em 0 1em;
+    margin-top: 1.5em;
+}
+
+.bottomContainer{
+    width: 85%;
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--grey);
+    padding: 0 1em 0 1em;
+    margin-top: 1.5em;
+}
+
+
+/* Small Image container */
+.imagesContainer {
+    display: none;
+}
+
+.ImageSmall {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+/* Big Image container */
+.ImageArtikel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin-top: 0.5em;
+    gap: 0.2em;
+}
+
+.ImageBig {
+    min-height: 25vh;
+    min-width: 75vw;
+
+    max-height: 25vh;
+    max-width: 75vw;
+
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+}
+
+.arrowLeft, .arrowRight{
+    max-width: 25px;
+    max-height: 25px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.arrowLeft:hover, .arrowRight:hover{
+    transform: scale(1.2);
+}
+
+.InfoArtikel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.3em;
+}
+
+.BuyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.BuyButton {
+    all: unset;
+    background: var(--buttonGradient);
+    color: white;
+    padding: 0.3em;
+    border-radius: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.mengenSelect {
+    background: var(--buttonGradient);
+    color: white;
+    gap: 0.5em;
+    border-radius: 5px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+    padding: 0.3em;
+    outline: none;
+}
+
+.mengenSelect:focus {
+    outline: none;
+}
+
+.mengenSelect option {
+    background-color: white;
+    color: black;
+}
+
+.artikelName {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.artikelDescription {
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.artikelPreis {
+    margin-top: 0.5em;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.filterGrey{
+    filter: var(--filterGrey);
+}
+
+.filterBlue{
+    filter: var(--filterBlue)
+}
+
+.backButton{
+    all: unset;
+    color: white;
+    background: var(--buttonGradient);
+    padding: 0.3em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1em;
+}
+
+.backContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media (min-width:481px) {
+    .topContainer{
+        width: 60%;
+        padding: 0.6em;
+    }
+    .artikelName {
+        font-weight: 600;
+        font-size: 2em;
+    }
+
+    .artikelDescription {
+        font-size: 1em;
+    }
+
+    .ImageBig {
+        min-height: 25vh;
+        min-width: 40vw;
+    
+        max-height: 25vh;
+        max-width: 40vw;
+
+    }
+
+    .BuyButton {
+        font-size: 1.1em;
+        height: 4vh;
+        padding: 0 0.5em 0 0.5em;
+    }
+
+    .mengenSelect {
+        height: 4vh;
+    }
+
+    .imagesContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}

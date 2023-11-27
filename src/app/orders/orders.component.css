@@ -1,0 +1,114 @@
+:host(app-orders){
+    width: 100%;
+    max-width: 100%;
+}
+
+.main{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainContainer{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ordersContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 100%;
+    gap: 0.5em;
+    border: 2px solid var(--secondary);
+    padding: 0 0 2em 0;
+    margin: 0 0 2em 0;
+}
+
+.orderContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 7em;
+    border-bottom: 2px solid var(--secondary);
+}
+
+/* Image Container */
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+
+    overflow: hidden;
+    /* border: 2px solid var(--secondary); */
+}
+
+.orderImage{
+    width: 90%;
+    height: 80%;
+    border-radius: 5px;
+}
+/* Image Container */
+
+
+/* Info Container */
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+
+    height: 100%;
+}
+
+.orderName{
+    display: inline;
+    font-size: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 300;
+    width: 90%;
+    text-align: center;
+}
+
+.orderPreis{
+    font-weight: 300;
+}
+
+/* Info Container */
+.statusContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+
+.breaker{
+    width: 80%;
+    height: 3px;
+    background-color: var(--grey);
+}
+
+@media (min-width: 768px) {
+        .mainContainer{
+            width: 60%;
+        }
+}

@@ -1,0 +1,30 @@
+:host(app-empfehlung){
+    width: 90%;
+    max-width: 90%;
+}
+.mainContainer{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.breaker{
+    width: 95%;
+    height: 3px;
+    background-color: var(--grey);
+}
+
+.artikelContainer{
+    width: 100%;
+}
+
+@media (min-width:481px) {
+    :host(app-empfehlung){
+        width: 70%;
+        max-width: 70%;
+    }
+}

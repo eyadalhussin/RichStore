@@ -1,0 +1,35 @@
+<div class="mainContainer">
+    <h2>Your orders </h2>
+    <!-- Right Container -->
+    <div class="rightContainer">
+        <!-- <button class="deleteButton">Delete Selected</button> -->
+        <h4>Summe: {{formatPreis(summe)}}€</h4>
+        <button class="payButton" (click)="onNavigateCheckout()">Checkout >></button>
+    </div>
+
+    <!-- Left Container -->
+    <div class="leftContainer">
+        <div class="artikel" *ngFor="let artikel of artikelListe">
+            <!-- Image -->
+            <div class="imageContainer">
+                <img src="{{artikel.images[0]}}" alt="" class="artikelImage">
+            </div>
+            <!-- Info Container -->
+            <div class="infoContainer">
+                <div class="nameContainer">
+                    <span class="nameArtikel">{{artikel.name}}</span>
+                </div>
+                <!-- <span class="descriptionArtikel">{{artikel.beschreibung}}</span> -->
+                <!-- Menge -->
+                <app-stars [artikel]="artikel" [border]="false" size="small"></app-stars>
+                <select (change)="onUpdateMenge(artikel)">
+                    <option *ngFor="let element of numbers" [selected]="element === +artikel.objectMenge">{{element}}</option>
+                </select>
+                <button class="removeButton" (click)="onRemoveItem(artikel.objectName)">Remove</button>
+            </div>
+            <div class="preisContainer">
+                <span class="preisArtikel">{{formatPreis(artikel.preis)}} €</span>
+            </div>
+        </div>
+    </div>
+</div>

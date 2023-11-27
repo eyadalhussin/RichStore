@@ -1,0 +1,8 @@
+.mainContainer{
+    overflow: auto;
+    position: relative;
+    background: #e4edf4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #dae1e7); 
+    background: linear-gradient(to right, #eef2f3, #dae1e7); 
+    min-height: 100vh;
+}

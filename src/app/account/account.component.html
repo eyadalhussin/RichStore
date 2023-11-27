@@ -1,0 +1,144 @@
+<div class="main">
+    <div class="mainContainer" *ngIf="!isLoading">
+        <!-- Account Container -->
+        <h3>Account</h3>
+        <div class="sectionContainer">
+            <!-- E-Mail -->
+            <div class="conti">
+                <div class="textInfoContainer">
+                    <span>E-Mail:</span>
+                </div>
+                <div class="textContainer">
+                    <span class="textSmall">{{currentUser.email}}</span>
+                </div>
+                <div class="buttonContainer">
+                    <button class="editButton" (click)="triggerEdit('email')">Edit</button>
+                </div>
+            </div>
+
+            <!-- Edit E-Mail -->
+            <div class="contiEdit" [@dropDown]="states['email']">
+                <div class="contiEditInput">
+                    <span>New E-Mail:</span>
+                    <input type="text" name="" id="" #email>
+                </div>
+                <div class="contiEditInput">
+                    <span>Confirm E-Mail:</span>
+                    <input type="text" name="" id="" #emailConfirm>
+                    <app-small-success text="E-Mail changed successfully!" *ngIf="emailChanged == 'changed'">
+                    </app-small-success>
+                    <app-small-error text="Error: emails are not matching" *ngIf="emailChanged == 'error'">
+                    </app-small-error>
+                </div>
+                <div class="editButtonsContainer">
+                    <button class="editButton" (click)="changeEmail(email, emailConfirm)">Apply</button>
+                    <button class="editButton" (click)="closeEdits()">Cancel</button>
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="conti">
+                <div class="textInfoContainer">
+                    <span>Password:</span>
+                </div>
+                <div class="textIconContainer">
+                    <span class="textSmall" *ngIf="passwordVisible">{{currentUser.password}}</span>
+                    <img src="assets/Icons/Eye.png" alt="" class="textIcon" (click)="togglePassword()">
+                </div>
+                <div class="buttonContainer">
+                    <button class="editButton" (click)="triggerEdit('password')">Edit</button>
+                </div>
+            </div>
+
+            <!-- Edit Password -->
+            <div class="contiEdit" [@dropDown]="states['password']">
+                <div class="contiEditInput">
+                    <span>Current Password</span>
+                    <input type="text" name="" id="" #curentPassword>
+                </div>
+                <div class="contiEditInput">
+                    <span>New Password</span>
+                    <input type="text" name="" id="" #password>
+                </div>
+                <div class="contiEditInput">
+                    <span>Confirm Password</span>
+                    <input type="text" name="" id="" #passwordConfirm>
+                </div>
+
+                <app-small-success text="Password changed successfully!" *ngIf="passwordChanged == 'changed'">
+                </app-small-success>
+                <app-small-error text="{{passwordError}}" *ngIf="passwordChanged == 'error'"></app-small-error>
+
+                <div class="editButtonsContainer">
+                    <button class="editButton"
+                        (click)="changePassword(curentPassword,password, passwordConfirm)">Apply</button>
+                    <button class="editButton" (click)="closeEdits()">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Adress Container -->
+        <h3>Address</h3>
+        <div class="sectionContainer">
+            <!-- Adress-->
+            <div class="conti">
+                <div class="textInfoContainer">
+                    <span>Address:</span>
+                </div>
+                <div class="textContainer">
+                    <span class="textSmall">{{currentUser.strasse}}</span>
+                    <span class="textSmall">{{currentUser.stadt}}</span>
+                    <span class="textSmall">{{currentUser.land}}</span>
+                </div>
+                <div class="buttonContainer">
+                    <button class="editButton" (click)="triggerEdit('address')">Edit</button>
+                </div>
+            </div>
+
+            <!-- Edit Address -->
+            <div class="contiEdit" [@dropDown]="states['address']">
+                <div class="contiEditInput">
+                    <span>Street & Nr</span>
+                    <input type="text" name="" id="" #street>
+                </div>
+                <div class="contiEditInput">
+                    <span>City</span>
+                    <input type="text" name="" id="" #city>
+                </div>
+                <div class="contiEditInput">
+                    <span>Land</span>
+                    <input type="text" name="" id="" #land>
+                </div>
+                <div class="editButtonsContainer">
+                    <button class="editButton" (click)="changeAddress(street, city, land)">Apply</button>
+                    <button class="editButton" (click)="closeEdits()">Cancel</button>
+                </div>
+
+                <app-small-success text="Address changed successfully!" *ngIf="addressChanged == 'changed'">
+                </app-small-success>
+                <app-small-error text="Error: Fields cannot be empty !" *ngIf="addressChanged == 'error'">
+                </app-small-error>
+
+            </div>
+        </div>
+
+        <!-- Payment Container -->
+        <h3>Payment</h3>
+        <div class="sectionContainer">
+            <!-- Payment-->
+            <div class="conti">
+                <div class="textInfoContainer">
+                    <span>Richstore:</span>
+                </div>
+                <div class="textContainer">
+                    <span class="textSmall">{{currentUser.saldo}}€</span>
+                </div>
+                <!-- <div class="buttonContainer">
+                <button class="editButton">Edit</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+</div>

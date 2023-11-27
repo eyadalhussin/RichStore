@@ -1,0 +1,26 @@
+<div class="main">
+
+    <div class="mainContainer">
+        <h3>Your Orders</h3>
+        <div class="ordersContainer" *ngIf="!isLoading">
+            <h4 *ngIf="orders.length <= 0">You don't have any orders yet</h4>
+            <!-- These Containers should be for 1 order -->
+            <div class="orderContainer" *ngFor="let order of orders">
+                <!-- Image Container -->
+                <div class="imageContainer">
+                    <img src="{{order.images[0]}}" alt="" class="orderImage">
+                </div>
+                <!-- Info Container -->
+                <div class="infoContainer">
+                    <span class="orderName">{{order.name}}</span>
+                    <app-stars [artikel]="order" [size]="'small'"></app-stars>
+                    <span class="orderPreis">{{formatPreis(order.preis)}}€</span>
+                </div>
+                <!-- Status Container -->
+                <div class="statusContainer">
+                    <span>In Zustellung</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

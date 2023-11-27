@@ -1,0 +1,9 @@
+<!-- This Component should be applied when clicking on See All -->
+<app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
+<div class="main" *ngIf="!isLoading">
+    <div class="mainContainer">
+        <span style="font-size:1.5em;">{{categorieName}}</span>
+        <app-artikel *ngFor="let element of artikels" [artikel]="element" ></app-artikel>
+        <!-- <router-outlet></router-outlet> -->
+    </div>
+</div>

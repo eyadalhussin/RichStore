@@ -1,0 +1,23 @@
+.errorContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc3c3;
+    border: 2px solid #ff857c;
+    gap: 0.5em;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 0.2em;
+}
+
+.purchaseIcon{
+    min-width: 20px;
+    min-height: 20px;
+
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.filterError{
+    filter: invert(11%) sepia(96%) saturate(5980%) hue-rotate(1deg) brightness(109%) contrast(106%);
+}

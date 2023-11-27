@@ -1,0 +1,14 @@
+<div class="mainContainer">
+    <img 
+    src="assets/Icons/Star.png" 
+    alt="" 
+    class="star filled" 
+    *ngFor="let element of StarsFull" 
+    [ngClass]="{border: borderEnabled, sizeSmall:size === 'small', sizeBig:size === 'big'}">
+
+    <img 
+    src="assets/Icons/Star.png" 
+    alt="" class="star empty" 
+    *ngFor="let element of StarsEmpty"  
+    [ngClass]="{border: borderEnabled , sizeSmall:size === 'small', sizeBig:size === 'big'}" >
+</div>

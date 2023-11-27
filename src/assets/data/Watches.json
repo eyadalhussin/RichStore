@@ -1,0 +1,72 @@
+[
+    {
+        "id": 0,
+        "name": "Cartier Tank Louis",
+        "images": [
+            "assets/Images/Watches/Cartier Tank Louis/1.PNG",
+            "assets/Images/Watches/Cartier Tank Louis/2.PNG",
+            "assets/Images/Watches/Cartier Tank Louis/3.PNG",
+            "assets/Images/Watches/Cartier Tank Louis/4.PNG"
+        ],
+        "preis": 70000,
+        "beschreibung": "The Cartier Tank Louis Cartier Skeleton Sapphire is a luxurious and intricate watch that features a transparent sapphire crystal case and skeletonized movement, revealing the watch's inner workings. It is crafted from 18K white gold and features a black alligator leather strap.",
+        "bewertung": 3,
+        "kategorie":"Watches"
+    },
+    {
+        "id": 1,
+        "name": "Hublot Classic Fusion ",
+        "images": [
+            "assets/Images/Watches/Hublot Classic Fusion/1.PNG",
+            "assets/Images/Watches/Hublot Classic Fusion/2.PNG",
+            "assets/Images/Watches/Hublot Classic Fusion/3.PNG",
+            "assets/Images/Watches/Hublot Classic Fusion/4.PNG"
+        ],
+        "preis": 57000,
+        "beschreibung": "The Hublot Big Bang Unico Full Magic Gold is a bold and eye-catching watch that features a gold case and bracelet. It has a black dial with gold-tone hands and hour markers, and a date display at the 3 o'clock position. It is water-resistant up to 100 meters",
+        "bewertung": 3,
+        "kategorie":"Watches"
+    },
+    {
+        "id": 2,
+        "name": "Patek Philippe Grand ",
+        "images": [
+            "assets/Images/Watches/Patek Philippe Grand/1.PNG",
+            "assets/Images/Watches/Patek Philippe Grand/2.PNG",
+            "assets/Images/Watches/Patek Philippe Grand/3.PNG",
+            "assets/Images/Watches/Patek Philippe Grand/4.PNG"
+        ],
+        "preis": 96500,
+        "beschreibung": "The Patek Philippe Grand Complications is a complex watch that features a perpetual calendar, a minute repeater, and a moon phase display. It is crafted from 18K rose gold and features a black alligator leather strap.", 
+        "bewertung": 4,
+        "kategorie":"Watches"
+    },
+    {
+        "id": 3,
+        "name": "Rolex Cosmograph Daytona",
+        "images": [
+            "assets/Images/Watches/Rolex Cosmograph Daytona/1.PNG",
+            "assets/Images/Watches/Rolex Cosmograph Daytona/2.PNG",
+            "assets/Images/Watches/Rolex Cosmograph Daytona/3.PNG",
+            "assets/Images/Watches/Rolex Cosmograph Daytona/4.PNG"
+        ],
+        "preis": 24500,
+        "beschreibung": "The Rolex Cosmograph Daytona is a highly sought-after timepiece, known for its precision, reliability, and sleek design. It features a black dial, three sub-dials, and a stainless steel bracelet.", 
+        "bewertung": 3,
+        "kategorie":"Watches"
+    },
+    {
+        "id": 4,
+        "name": "Vacheron Constantin Patrimony",
+        "images": [
+            "assets/Images/Watches/Vacheron Constantin Patrimony/1.PNG",
+            "assets/Images/Watches/Vacheron Constantin Patrimony/2.PNG",
+            "assets/Images/Watches/Vacheron Constantin Patrimony/3.PNG",
+            "assets/Images/Watches/Vacheron Constantin Patrimony/4.PNG"
+        ],
+        "preis": 22500,
+        "beschreibung": "The Vacheron Constantin Patrimony is a classic dress watch that features a minimalist design and a simple yet elegant silver dial. It is crafted from 18K white gold and features a black alligator leather strap.", 
+        "bewertung": 2,
+        "kategorie":"Watches"
+    }
+]
